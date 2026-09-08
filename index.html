@@ -196,18 +196,32 @@
   </div>
 
   <script>
+    // function handleFormSubmit(event) {
+    //   event.preventDefault();
+      
+    //   const phoneInput = document.getElementById('phone').value;
+    //   const consentChecked = document.getElementById('consent').checked;
+
+    //   if (phoneInput && consentChecked) {
+    //     // Display confirmation state
+    //     document.getElementById('optInForm').style.display = 'none';
+    //     document.getElementById('confirmationMessage').style.display = 'block';
+    //   }
+    // }
+
     function handleFormSubmit(event) {
       event.preventDefault();
       
       const phoneInput = document.getElementById('phone').value;
-      const consentChecked = document.getElementById('consent').checked;
+      // const consentChecked = document.getElementById('consent').checked;
 
-      if (phoneInput && consentChecked) {
+      if (phoneInput) {
         // Display confirmation state
         document.getElementById('optInForm').style.display = 'none';
-        document.getElementById('confirmationMessage').style.display = 'block';
+        // document.getElementById('confirmationMessage').style.display = 'block';
       }
-    }
+    }    
+    
   </script>
 
 </body>
